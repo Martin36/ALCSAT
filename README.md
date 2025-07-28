@@ -23,3 +23,7 @@ The `--mode` options allows switching between exact mode and approximate mode.
 - `exact`: only consider exact fittings: concepts that cover all positive examples and exclude all negative examples
 - `neg_approx`: (SPELL only) search for an approximate fitting, that covers all positive examples but not necessarily excludes all negative examples
 - `full_approx`: search for an approximate fitting that may not cover some positive examples and may cover some negative examples
+
+## ISWC2025 Benchmark Reproduction
+Instructions to reproduce the family benchmarks are in the folder alc_benchmarks in a separate README file. Instructions and required files to reproduce the results on the SML benchmarks can be found in the following repository.
+https://github.com/SAT-based-Concept-Learning/ALC-SAT-eval
