@@ -454,6 +454,7 @@ class FittingALC:
         enc = CardEnc.atleast(
             lits, bound=k, top_id=self.max_var, encoding=EncType.kmtotalizer
         )
+        self.max_var = max(enc.nv, self.max_var)
         for clause in enc.clauses:
             self.solver.add_clause(clause)
 
