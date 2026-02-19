@@ -4,6 +4,7 @@
 #SBATCH --time=12:05:00
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=8
+#SBATCH --partition=rleap_cpu,rleap_cpu_modern,rleap_gpu_24gb,rleap_gpu_48gb
 
 # SLURM script for running SPELL DL concept learning
 # Usage: sbatch run_spell.sh INPUT_FOLDER
