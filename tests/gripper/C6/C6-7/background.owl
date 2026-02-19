@@ -105,15 +105,15 @@
 
     <!-- State 1 -->
     <owl:NamedIndividual rdf:about="#rooma_1">
+        <rdf:type rdf:resource="#at-robby"/>
         <rdf:type rdf:resource="#room"/>
-        <at_inv rdf:resource="#ball1_1"/>
         <at_inv rdf:resource="#ball2_1"/>
         <at_inv rdf:resource="#ball3_1"/>
+        <at_inv rdf:resource="#ball4_1"/>
         <eq rdf:resource="#rooma_1"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#roomb_1">
-        <rdf:type rdf:resource="#at-robby"/>
         <rdf:type rdf:resource="#room"/>
         <at_g_inv rdf:resource="#ball4_1"/>
         <eq rdf:resource="#roomb_1"/>
@@ -121,8 +121,8 @@
 
     <owl:NamedIndividual rdf:about="#ball4_1">
         <rdf:type rdf:resource="#ball"/>
+        <at rdf:resource="#rooma_1"/>
         <at_g rdf:resource="#roomb_1"/>
-        <carry rdf:resource="#left_1"/>
         <eq rdf:resource="#ball4_1"/>
     </owl:NamedIndividual>
 
@@ -140,13 +140,13 @@
 
     <owl:NamedIndividual rdf:about="#ball1_1">
         <rdf:type rdf:resource="#ball"/>
-        <at rdf:resource="#rooma_1"/>
+        <carry rdf:resource="#left_1"/>
         <eq rdf:resource="#ball1_1"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#left_1">
         <rdf:type rdf:resource="#gripper"/>
-        <carry_inv rdf:resource="#ball4_1"/>
+        <carry_inv rdf:resource="#ball1_1"/>
         <eq rdf:resource="#left_1"/>
     </owl:NamedIndividual>
 
@@ -162,7 +162,6 @@
         <at_inv rdf:resource="#ball1_2"/>
         <at_inv rdf:resource="#ball2_2"/>
         <at_inv rdf:resource="#ball3_2"/>
-        <at_inv rdf:resource="#ball4_2"/>
         <eq rdf:resource="#rooma_2"/>
     </owl:NamedIndividual>
 
@@ -175,8 +174,8 @@
 
     <owl:NamedIndividual rdf:about="#ball4_2">
         <rdf:type rdf:resource="#ball"/>
-        <at rdf:resource="#rooma_2"/>
         <at_g rdf:resource="#roomb_2"/>
+        <carry rdf:resource="#left_2"/>
         <eq rdf:resource="#ball4_2"/>
     </owl:NamedIndividual>
 
@@ -199,8 +198,8 @@
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#left_2">
-        <rdf:type rdf:resource="#free"/>
         <rdf:type rdf:resource="#gripper"/>
+        <carry_inv rdf:resource="#ball4_2"/>
         <eq rdf:resource="#left_2"/>
     </owl:NamedIndividual>
 
@@ -241,7 +240,7 @@
 
     <owl:NamedIndividual rdf:about="#ball2_3">
         <rdf:type rdf:resource="#ball"/>
-        <carry rdf:resource="#right_3"/>
+        <carry rdf:resource="#left_3"/>
         <eq rdf:resource="#ball2_3"/>
     </owl:NamedIndividual>
 
@@ -252,14 +251,14 @@
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#left_3">
-        <rdf:type rdf:resource="#free"/>
         <rdf:type rdf:resource="#gripper"/>
+        <carry_inv rdf:resource="#ball2_3"/>
         <eq rdf:resource="#left_3"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#right_3">
+        <rdf:type rdf:resource="#free"/>
         <rdf:type rdf:resource="#gripper"/>
-        <carry_inv rdf:resource="#ball2_3"/>
         <eq rdf:resource="#right_3"/>
     </owl:NamedIndividual>
 
@@ -318,8 +317,8 @@
 
     <!-- State 5 -->
     <owl:NamedIndividual rdf:about="#rooma_5">
-        <rdf:type rdf:resource="#at-robby"/>
         <rdf:type rdf:resource="#room"/>
+        <at_inv rdf:resource="#ball1_5"/>
         <at_inv rdf:resource="#ball2_5"/>
         <at_inv rdf:resource="#ball3_5"/>
         <at_inv rdf:resource="#ball4_5"/>
@@ -327,6 +326,7 @@
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#roomb_5">
+        <rdf:type rdf:resource="#at-robby"/>
         <rdf:type rdf:resource="#room"/>
         <at_g_inv rdf:resource="#ball4_5"/>
         <eq rdf:resource="#roomb_5"/>
@@ -353,13 +353,13 @@
 
     <owl:NamedIndividual rdf:about="#ball1_5">
         <rdf:type rdf:resource="#ball"/>
-        <carry rdf:resource="#left_5"/>
+        <at rdf:resource="#rooma_5"/>
         <eq rdf:resource="#ball1_5"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#left_5">
+        <rdf:type rdf:resource="#free"/>
         <rdf:type rdf:resource="#gripper"/>
-        <carry_inv rdf:resource="#ball1_5"/>
         <eq rdf:resource="#left_5"/>
     </owl:NamedIndividual>
 
@@ -371,31 +371,30 @@
 
     <!-- State 6 -->
     <owl:NamedIndividual rdf:about="#rooma_6">
+        <rdf:type rdf:resource="#at-robby"/>
         <rdf:type rdf:resource="#room"/>
         <at_inv rdf:resource="#ball1_6"/>
         <at_inv rdf:resource="#ball2_6"/>
-        <at_inv rdf:resource="#ball3_6"/>
+        <at_inv rdf:resource="#ball4_6"/>
         <eq rdf:resource="#rooma_6"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#roomb_6">
-        <rdf:type rdf:resource="#at-robby"/>
         <rdf:type rdf:resource="#room"/>
-        <at_inv rdf:resource="#ball4_6"/>
         <at_g_inv rdf:resource="#ball4_6"/>
         <eq rdf:resource="#roomb_6"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#ball4_6">
         <rdf:type rdf:resource="#ball"/>
-        <at rdf:resource="#roomb_6"/>
+        <at rdf:resource="#rooma_6"/>
         <at_g rdf:resource="#roomb_6"/>
         <eq rdf:resource="#ball4_6"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#ball3_6">
         <rdf:type rdf:resource="#ball"/>
-        <at rdf:resource="#rooma_6"/>
+        <carry rdf:resource="#left_6"/>
         <eq rdf:resource="#ball3_6"/>
     </owl:NamedIndividual>
 
@@ -412,8 +411,8 @@
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#left_6">
-        <rdf:type rdf:resource="#free"/>
         <rdf:type rdf:resource="#gripper"/>
+        <carry_inv rdf:resource="#ball3_6"/>
         <eq rdf:resource="#left_6"/>
     </owl:NamedIndividual>
 
@@ -429,6 +428,7 @@
         <rdf:type rdf:resource="#room"/>
         <at_inv rdf:resource="#ball1_7"/>
         <at_inv rdf:resource="#ball2_7"/>
+        <at_inv rdf:resource="#ball3_7"/>
         <eq rdf:resource="#rooma_7"/>
     </owl:NamedIndividual>
 
@@ -447,7 +447,7 @@
 
     <owl:NamedIndividual rdf:about="#ball3_7">
         <rdf:type rdf:resource="#ball"/>
-        <carry rdf:resource="#right_7"/>
+        <at rdf:resource="#rooma_7"/>
         <eq rdf:resource="#ball3_7"/>
     </owl:NamedIndividual>
 
@@ -470,8 +470,8 @@
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="#right_7">
+        <rdf:type rdf:resource="#free"/>
         <rdf:type rdf:resource="#gripper"/>
-        <carry_inv rdf:resource="#ball3_7"/>
         <eq rdf:resource="#right_7"/>
     </owl:NamedIndividual>
 
