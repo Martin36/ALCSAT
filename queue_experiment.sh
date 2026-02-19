@@ -32,4 +32,6 @@ queue_experiment () {
 queue_experiment "$REPO_FOLDER/tests/C3"
 queue_experiment "$REPO_FOLDER/tests/C3-2"
 queue_experiment "$REPO_FOLDER/tests/C3-2-eq"
+queue_experiment "$REPO_FOLDER/tests/C3-3"
+queue_experiment "$REPO_FOLDER/tests/C3-4-eq"
 queue_experiment "$REPO_FOLDER/tests/C3-10-eq"
