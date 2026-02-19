@@ -34,7 +34,6 @@ mkdir -p "$OUTPUT_FOLDER"
 cd "$OUTPUT_FOLDER"
 
 OUTPUT_FILE="log.txt"
-SPARQL_OUTPUT="concept.sparql"
 
 # SPELL parameters
 LANGUAGE="alc"           # Options: el, el_alcsat, fl0, ex-or, all-or, elu, alc
@@ -61,7 +60,6 @@ python /work/rleap1/martin.funkquist/ALCSAT/spell_cli.py \
     --language "$LANGUAGE" \
     --max_size "$MAX_SIZE" \
     --timeout "$TIMEOUT" \
-    --output "$SPARQL_OUTPUT" \
     "$OWL_FILE" \
     "$POS_EXAMPLES" \
     "$NEG_EXAMPLES" \
@@ -120,14 +118,6 @@ else
     echo "WARNING: Output file not found!" >> "$EMAIL_BODY"
 fi
 
-if [ -f "$SPARQL_OUTPUT" ]; then
-    echo "" >> "$EMAIL_BODY"
-    echo "" >> "$EMAIL_BODY"
-    echo "Generated SPARQL Query:" >> "$EMAIL_BODY"
-    echo "=======================" >> "$EMAIL_BODY"
-    cat "$SPARQL_OUTPUT" >> "$EMAIL_BODY"
-fi
-
 # Send email with results
 mail -s "$EMAIL_SUBJECT" "$EMAIL" < "$EMAIL_BODY"
 
@@ -136,8 +126,5 @@ rm -f "$EMAIL_BODY"
 
 echo "Email sent to: $EMAIL"
 echo "Results saved to: $OUTPUT_FILE"
-if [ -f "$SPARQL_OUTPUT" ]; then
-    echo "SPARQL query saved to: $SPARQL_OUTPUT"
-fi
 
 exit $EXIT_CODE
