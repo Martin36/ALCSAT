@@ -2,6 +2,18 @@
 EXPERIMENTS_FOLDER="/work/rleap1/martin.funkquist/experiments/ALCSAT"
 REPO_FOLDER="/work/rleap1/martin.funkquist/ALCSAT"
 
+ID=1 # ID of this particular set of experiments
+# Search for an available ID
+while [ -d "${EXPERIMENTS_FOLDER}/${ID}" ]
+do
+    ID=$(( ${ID} + 1 ))
+done
+
+mkdir -p "${EXPERIMENTS_FOLDER}/${ID}"
+echo "Assigned ID: ${ID}"
+
+EXPERIMENTS_FOLDER="${EXPERIMENTS_FOLDER}/${ID}"
+
 queue_experiment () {
     local INPUT_FOLDER="$1"
 
