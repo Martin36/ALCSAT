@@ -1,0 +1,8 @@
+#rooma_2
+#rooma_3
+#roomb_2
+#ball4_2
+#ball3_2
+#roomb_3
+#ball4_3
+#ball1_3

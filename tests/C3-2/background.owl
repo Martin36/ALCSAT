@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="#"
+     xml:base=""
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- #at -->
+
+    <owl:ObjectProperty rdf:about="#at"/>
+
+    <!-- #carry -->
+
+    <owl:ObjectProperty rdf:about="#carry"/>
+
+    <!-- #at_g -->
+
+    <owl:ObjectProperty rdf:about="#at_g"/>
+
+    <!-- Inverse roles -->
+
+    <owl:ObjectProperty rdf:about="#at_inv">
+        <owl:inverseOf rdf:resource="#at"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#carry_inv">
+        <owl:inverseOf rdf:resource="#carry"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#at_g_inv">
+        <owl:inverseOf rdf:resource="#at_g"/>
+    </owl:ObjectProperty>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- #at-robby -->
+
+    <owl:Class rdf:about="#at-robby"/>
+
+    <!-- #ball -->
+
+    <owl:Class rdf:about="#ball"/>
+
+    <!-- #free -->
+
+    <owl:Class rdf:about="#free"/>
+
+    <!-- #gripper -->
+
+    <owl:Class rdf:about="#gripper"/>
+
+    <!-- #room -->
+
+    <owl:Class rdf:about="#room"/>
+
+    
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- State 1 -->
+    <owl:NamedIndividual rdf:about="#rooma_1">
+        <rdf:type rdf:resource="#room"/>
+        <at_inv rdf:resource="#ball1_1"/>
+        <at_inv rdf:resource="#ball2_1"/>
+        <at_inv rdf:resource="#ball3_1"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#roomb_1">
+        <rdf:type rdf:resource="#at-robby"/>
+        <rdf:type rdf:resource="#room"/>
+        <at_inv rdf:resource="#ball4_1"/>
+        <at_g_inv rdf:resource="#ball4_1"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ball4_1">
+        <rdf:type rdf:resource="#ball"/>
+        <at rdf:resource="#roomb_1"/>
+        <at_g rdf:resource="#roomb_1"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ball3_1">
+        <rdf:type rdf:resource="#ball"/>
+        <at rdf:resource="#rooma_1"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ball2_1">
+        <rdf:type rdf:resource="#ball"/>
+        <at rdf:resource="#rooma_1"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ball1_1">
+        <rdf:type rdf:resource="#ball"/>
+        <at rdf:resource="#rooma_1"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#left_1">
+        <rdf:type rdf:resource="#free"/>
+        <rdf:type rdf:resource="#gripper"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#right_1">
+        <rdf:type rdf:resource="#free"/>
+        <rdf:type rdf:resource="#gripper"/>
+    </owl:NamedIndividual>
+
+    <!-- State 2 -->
+    <owl:NamedIndividual rdf:about="#rooma_2">
+        <rdf:type rdf:resource="#at-robby"/>
+        <rdf:type rdf:resource="#room"/>
+        <at_inv rdf:resource="#ball1_2"/>
+        <at_inv rdf:resource="#ball3_2"/>
+        <at_inv rdf:resource="#ball4_2"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#roomb_2">
+        <rdf:type rdf:resource="#room"/>
+        <at_g_inv rdf:resource="#ball4_2"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ball4_2">
+        <rdf:type rdf:resource="#ball"/>
+        <at rdf:resource="#rooma_2"/>
+        <at_g rdf:resource="#roomb_2"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ball3_2">
+        <rdf:type rdf:resource="#ball"/>
+        <at rdf:resource="#rooma_2"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ball2_2">
+        <rdf:type rdf:resource="#ball"/>
+        <carry rdf:resource="#right_2"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ball1_2">
+        <rdf:type rdf:resource="#ball"/>
+        <at rdf:resource="#rooma_2"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#left_2">
+        <rdf:type rdf:resource="#free"/>
+        <rdf:type rdf:resource="#gripper"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#right_2">
+        <rdf:type rdf:resource="#gripper"/>
+        <carry_inv rdf:resource="#ball2_2"/>
+    </owl:NamedIndividual>
+
+</rdf:RDF>
