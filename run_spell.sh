@@ -90,7 +90,7 @@ SPELL DL Concept Learning Results
 
 Job ID: $SLURM_JOB_ID
 Node: $(hostname)
-Started: $(head -n 3 spell_job_${SLURM_JOB_ID}.out | tail -n 1 | cut -d: -f2-)
+Started: $(head -n 5 spell_job_${SLURM_JOB_ID}.out | tail -n 1 | cut -d: -f2-)
 Finished: $(date)
 Exit Code: $EXIT_CODE
 
@@ -101,7 +101,6 @@ Positive examples: $POS_EXAMPLES
 Negative examples: $NEG_EXAMPLES
 Language: $LANGUAGE
 Max size: $MAX_SIZE
-Mode: $MODE
 Timeout: ${TIMEOUT}s
 
 Results Summary:
