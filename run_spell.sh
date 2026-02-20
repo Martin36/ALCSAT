@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --output=spell_job_%j.out
 #SBATCH --error=spell_job_%j.err
-#SBATCH --time=12:05:00
+#SBATCH --time=24:05:00
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=8
 #SBATCH --partition=rleap_cpu,rleap_cpu_modern,rleap_gpu_24gb,rleap_gpu_48gb
@@ -38,7 +38,7 @@ OUTPUT_FILE="log.txt"
 # SPELL parameters
 LANGUAGE="alc"           # Options: el, el_alcsat, fl0, ex-or, all-or, elu, alc
 MAX_SIZE=20             # Maximum concept size
-TIMEOUT=43200            # Timeout in seconds (43,200 = 12 hours)
+TIMEOUT=86400            # Timeout in seconds (86,400 = 24 hours)
 
 echo "Configuration:"
 echo "  OWL file: $OWL_FILE"

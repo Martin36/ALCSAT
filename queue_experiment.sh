@@ -29,16 +29,11 @@ queue_experiment () {
     popd > /dev/null
 }
 
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-2"
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-2-eq"
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-3"
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-4-eq"
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-6"
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-7"
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-8"
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-9"
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-10-eq"
-# queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-all"
+queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-6"
+queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-7"
+queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-8"
+queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-9"
+queue_experiment "$REPO_FOLDER/tests/gripper/C3/C3-10"
 
 queue_experiment "$REPO_FOLDER/tests/gripper/C6/C6-6"
 queue_experiment "$REPO_FOLDER/tests/gripper/C6/C6-7"
