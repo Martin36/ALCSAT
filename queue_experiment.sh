@@ -29,17 +29,23 @@ queue_experiment () {
     popd > /dev/null
 }
 
+queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C1"
+queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C2"
+# queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C3"
+queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C4"
+queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C5"
+# queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C6"
+queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C7"
+queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C8"
+
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_6/C3-6"
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_7/C3-7"
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_8/C3-8"
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_9/C3-9"
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_10/C3-10"
-queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C3"
-
 
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_6/C6-6"
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_7/C6-7"
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_8/C6-8"
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_9/C6-9"
 # queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic_10/C6-10"
-queue_experiment "$REPO_FOLDER/tests/gripper/gripper-atomic-all/C6"
