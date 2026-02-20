@@ -1,0 +1,71 @@
+# State 1: (at ball1 rooma), (at ball2 rooma), (at ball3 rooma), (at-robby rooma), (carry ball4 left), (free right)
+# Goal: (at ball4 roomb)
+# Object embeddings:
+  ball1 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball2 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball3 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball4 [1, 0, 1, 1, 1, 1, 1, 0]
+  left [0, 1, 0, 0, 0, 0, 0, 1]
+  right [1, 1, 0, 1, 1, 1, 1, 0]
+  rooma [1, 1, 0, 1, 1, 1, 1, 0]
+  roomb [1, 0, 1, 1, 1, 1, 1, 0]
+
+# State 2: (at ball1 rooma), (at ball2 rooma), (at ball4 rooma), (at-robby rooma), (carry ball3 right), (free left)
+# Goal: (at ball4 roomb)
+# Object embeddings:
+  ball1 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball2 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball3 [1, 0, 1, 1, 1, 1, 1, 0]
+  ball4 [1, 0, 1, 1, 1, 1, 1, 0]
+  left [1, 1, 0, 1, 1, 1, 1, 0]
+  right [0, 1, 0, 0, 0, 0, 0, 1]
+  rooma [1, 1, 1, 1, 1, 1, 1, 0]
+  roomb [1, 0, 1, 1, 1, 1, 1, 0]
+
+# State 3: (at ball1 rooma), (at ball3 rooma), (at-robby rooma), (carry ball2 right), (carry ball4 left)
+# Goal: (at ball4 roomb)
+# Object embeddings:
+  ball1 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball2 [1, 0, 1, 1, 1, 1, 1, 0]
+  ball3 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball4 [1, 0, 1, 1, 1, 1, 1, 0]
+  left [0, 1, 0, 0, 0, 0, 0, 1]
+  right [0, 1, 0, 0, 0, 0, 0, 1]
+  rooma [1, 1, 0, 1, 1, 1, 1, 0]
+  roomb [1, 0, 1, 1, 1, 1, 1, 0]
+
+# State 4: (at ball1 rooma), (at ball3 rooma), (at ball4 rooma), (at-robby rooma), (carry ball2 left), (free right)
+# Goal: (at ball4 roomb)
+# Object embeddings:
+  ball1 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball2 [1, 0, 1, 1, 1, 1, 1, 0]
+  ball3 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball4 [1, 0, 1, 1, 1, 1, 1, 0]
+  left [0, 1, 0, 0, 0, 0, 0, 1]
+  right [1, 1, 0, 1, 1, 1, 1, 0]
+  rooma [1, 1, 1, 1, 1, 1, 1, 0]
+  roomb [1, 0, 1, 1, 1, 1, 1, 0]
+
+# State 5: (at ball2 rooma), (at ball3 rooma), (at-robby rooma), (carry ball1 right), (carry ball4 left)
+# Goal: (at ball4 roomb)
+# Object embeddings:
+  ball1 [1, 0, 1, 1, 1, 1, 1, 0]
+  ball2 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball3 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball4 [1, 0, 1, 1, 1, 1, 1, 0]
+  left [0, 1, 0, 0, 0, 0, 0, 1]
+  right [0, 1, 0, 0, 0, 0, 0, 1]
+  rooma [1, 1, 0, 1, 1, 1, 1, 0]
+  roomb [1, 0, 1, 1, 1, 1, 1, 0]
+
+# State 6: (at ball1 rooma), (at ball2 rooma), (at ball3 rooma), (at-robby rooma), (carry ball4 right), (free left)
+# Goal: (at ball4 roomb)
+# Object embeddings:
+  ball1 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball2 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball3 [1, 1, 0, 1, 1, 0, 1, 1]
+  ball4 [1, 0, 1, 1, 1, 1, 1, 0]
+  left [1, 1, 0, 1, 1, 1, 1, 0]
+  right [0, 1, 0, 0, 0, 0, 0, 1]
+  rooma [1, 1, 0, 1, 1, 1, 1, 0]
+  roomb [1, 0, 1, 1, 1, 1, 1, 0]

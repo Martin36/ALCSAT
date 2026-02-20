@@ -1,0 +1,8 @@
+#left_1
+#right_2
+#left_3
+#right_3
+#left_4
+#left_5
+#right_5
+#right_6

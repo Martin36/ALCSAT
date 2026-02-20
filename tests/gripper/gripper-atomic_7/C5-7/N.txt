@@ -1,0 +1,7 @@
+#right_2
+#rooma_3
+#left_3
+#right_4
+#left_5
+#left_6
+#left_7

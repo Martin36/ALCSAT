@@ -1,0 +1,11 @@
+#rooma_2
+#ball4_2
+#right_4
+#left_5
+#right_5
+#right_6
+#rooma_7
+#left_7
+#left_8
+#right_9
+#left_10
